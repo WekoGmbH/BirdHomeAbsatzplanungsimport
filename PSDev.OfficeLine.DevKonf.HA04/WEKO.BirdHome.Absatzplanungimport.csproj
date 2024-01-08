@@ -1,0 +1,134 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{401CE95E-73D2-4B85-915D-5026DFEFE146}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>WEKO.BirdHome.Absatzplanungimport</RootNamespace>
+    <AssemblyName>WEKO.BirdHome.Absatzplanungimport</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>C:\Program Files %28x86%29\Sage\Sage 100\9.0\Shared\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>C:\Program Files (x86)\Sage\Sage 100\8.0\Shared\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="PresentationFramework" />
+    <Reference Include="Sagede.OfficeLine.Data">
+      <HintPath>..\..\..\..\..\..\..\Program Files (x86)\Sage\Sage 100\8.0\Shared\Sagede.OfficeLine.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="Sagede.OfficeLine.Data.Devices.Main">
+      <HintPath>..\..\..\..\..\..\..\Program Files (x86)\Sage\Sage 100\8.0\Shared\Sagede.OfficeLine.Data.Devices.Main.dll</HintPath>
+    </Reference>
+    <Reference Include="Sagede.OfficeLine.Data.Entities.Main, Version=8.0.0.0, Culture=neutral, PublicKeyToken=4ad8971889b881a9, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\..\Program Files (x86)\Sage\Sage 100\8.0\Shared\Sagede.OfficeLine.Data.Entities.Main.dll</HintPath>
+    </Reference>
+    <Reference Include="Sagede.OfficeLine.Engine">
+      <HintPath>..\..\..\..\..\..\..\Program Files (x86)\Sage\Sage 100\8.0\Shared\Sagede.OfficeLine.Engine.dll</HintPath>
+    </Reference>
+    <Reference Include="Sagede.OfficeLine.Security">
+      <HintPath>..\..\..\..\..\..\..\Program Files (x86)\Sage\Sage 100\8.0\Shared\Sagede.OfficeLine.Security.dll</HintPath>
+    </Reference>
+    <Reference Include="Sagede.OfficeLine.Shared">
+      <HintPath>..\..\..\..\..\..\..\Program Files (x86)\Sage\Sage 100\8.0\Shared\Sagede.OfficeLine.Shared.dll</HintPath>
+    </Reference>
+    <Reference Include="Sagede.OfficeLine.Shared.RealTimeData, Version=8.0.0.0, Culture=neutral, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\..\Program Files (x86)\Sage\Sage 100\8.0\Shared\Sagede.OfficeLine.Shared.RealTimeData.dll</HintPath>
+    </Reference>
+    <Reference Include="Sagede.OfficeLine.Wawi.LagerEngine, Version=8.0.0.0, Culture=neutral, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\..\Program Files (x86)\Sage\Sage 100\8.0\Shared\Sagede.OfficeLine.Wawi.LagerEngine.dll</HintPath>
+    </Reference>
+    <Reference Include="Sagede.OfficeLine.Wawi.Utilities, Version=8.0.0.0, Culture=neutral, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\..\Program Files (x86)\Sage\Sage 100\8.0\Shared\Sagede.OfficeLine.Wawi.Utilities.dll</HintPath>
+    </Reference>
+    <Reference Include="Sagede.Shared.BlobStorage, Version=8.0.0.0, Culture=neutral, PublicKeyToken=4ad8971889b881a9, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\..\Windows\Microsoft.NET\assembly\GAC_32\Sagede.Shared.BlobStorage\v4.0_8.0.0.0__4ad8971889b881a9\Sagede.Shared.BlobStorage.dll</HintPath>
+    </Reference>
+    <Reference Include="Sagede.Shared.Core, Version=8.0.0.0, Culture=neutral, PublicKeyToken=4ad8971889b881a9, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\..\Windows\Microsoft.NET\assembly\GAC_32\Sagede.Shared.Core\v4.0_8.0.0.0__4ad8971889b881a9\Sagede.Shared.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="Sagede.Shared.RealTimeData.Common, Version=8.0.0.0, Culture=neutral, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\..\Program Files (x86)\Sage\Sage 100\8.0\Shared\Sagede.Shared.RealTimeData.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="BlobStorage\BlobHelper.cs" />
+    <Compile Include="BlobStorage\BlobProvider.cs" />
+    <Compile Include="Exceptions\DataNotFoundException.cs" />
+    <Compile Include="Exceptions\DataUpdateException.cs" />
+    <Compile Include="Core\Enumerations.cs" />
+    <Compile Include="AbsatzplanungMacro.cs" />
+    <Compile Include="ClientCall.cs" />
+    <Compile Include="Import\ImportAbsatzplanung.cs" />
+    <Compile Include="Import\ImportAbsatzplanungList.cs" />
+    <Compile Include="Exceptions\LagerJobSaveException.cs" />
+    <Compile Include="Import\LagerEngine.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Core\TraceLog.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="Microsoft.Office.Core">
+      <Guid>{2DF8D04C-5BFA-101B-BDE5-00AA0044DE52}</Guid>
+      <VersionMajor>2</VersionMajor>
+      <VersionMinor>7</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="Microsoft.Office.Interop.Excel">
+      <Guid>{00020813-0000-0000-C000-000000000046}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>8</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="VBIDE">
+      <Guid>{0002E157-0000-0000-C000-000000000046}</Guid>
+      <VersionMajor>5</VersionMajor>
+      <VersionMinor>3</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
